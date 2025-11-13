@@ -1,0 +1,215 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+*::selection {
+  background-color: #ff6337;
+  color: #fff;
+}
+
+header {
+	background-color: #fff;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.16);
+}
+
+nav {
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	padding: 20px 0;
+}
+
+footer {
+	background-color: #252932;
+}
+
+footer,
+footer a {
+	color: #e3e6ed;
+}
+
+iframe {
+	width: 260px;
+	height: 130px;
+}
+
+/* header樣式設定 */
+.navBar {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.navLogo {
+	width: 90px;
+	height: 34px;
+	margin-left: 20px;
+}
+
+.menu {
+	margin-right: 20px;
+}
+
+.menu a {
+	padding: 15px;
+  font-size: 15px;
+  color: #505563;
+}
+
+a.menuBtn {
+  background-color: #da3743;
+  border: none;
+  font-size: 18px;
+  font-weight: 900;
+  color: white;
+  padding: 5px 25px;
+  border-radius: 25px;
+  line-height: 1.5;
+}
+
+.menuBtn::before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  width: 27px;
+  background: url(../inline/image/ot-logo-white.png);
+  background-size: 100%;
+  margin-bottom: -4px;
+  margin-right: 10px;
+}
+
+.menuBtn:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* main 樣式設定 */
+
+.pageWrap {
+	padding: 0;
+	margin: 0;
+	/* display: block; */
+	border: none;
+	/* overflow: unset; */
+	/* vertical-align: baseline; */
+}
+
+
+.section1LeftWrap{
+	float: left;
+}
+
+.bcgImg1 {
+	background-image: url(./image/New-official-website首圖.png);
+	background-repeat: repeat;
+	background-size: cover;
+	/* display: block; */
+	overflow: hidden;
+	height: 320px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* footer樣式設定 */
+.footerWrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.info {
+	display: flex;
+	font-size: 12.3px;
+	padding: 60px 0 20px 0;
+}
+
+.info > div {
+	width: 25%;
+	margin: 0 20px;
+}
+
+.about img {
+	width: 90px;
+}
+
+.country {
+	margin-top: 25px;
+	margin-bottom: 14px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.jpPostcode {
+	margin-bottom: 12.5px;
+}
+
+.info .sitemap {
+	margin-bottom: 40px;
+}
+
+.info .sitemap li,
+.contact li {
+  border-bottom: 1px solid #384044;
+	padding: 10px 10px 10px 0;
+	font-size: 16px;
+}
+
+.sitemap h3,
+.contact h3,
+.socialMedia h3 {
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+
+.language,
+.fb {
+	margin-top: 40px;
+}
+
+.contact p {
+	font-size: 16px;
+	margin-bottom: 16px;
+}
+
+.zhLang {
+	color: #000;
+}
+
+.copyright {
+	background: #191c23;
+	padding: 15px 0 13px;
+}
+
+.copyright .coprInfo {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 0 120.286px;
+	color: #9ea6b7;
+}
+
+.coprInfo p {
+	line-height: 40px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.coprInfo a {
+	color: #9ea6b7;
+}
+
+.mediaIcon a i {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 21px;
+	text-align: center;
+	opacity: 0.6;
+}
+
+.info a:hover:not(.active),
+.copyright a:hover {
+  color: #ff6e06;
+}

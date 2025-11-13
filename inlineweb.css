@@ -177,20 +177,37 @@ p.feature1 {
 	background-size: cover;
 	margin-bottom: 40px;
 	z-index: 1;
-	
 }
 
-.queuingFeature ul {
+.queuing,
+.guest {
+	display: flex;
+	justify-content: space-around;
+}
+
+.bookingFeature ul,
+.queuingFeature ul,
+.guestFeature ul {
 	margin-top: 80px;
-	margin-bottom: 60px;
 	color: #064c8c;
 	font-size: 24px;
 	font-weight: 700;
 }
 
-.queuing {
-	display: flex;
-	justify-content: space-around;
+.bookingFeature li,
+.queuingFeature li,
+.guestFeature li {
+	margin-top: 60px;
+	font-size: 19.2px;
+	color: #252932;
+}
+
+.bookingFeature p,
+.queuingFeature p,
+.guestFeature p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #252932;
 }
 
 .queuing img {
@@ -200,6 +217,36 @@ p.feature1 {
 	/* text-align: right;
 	vertical-align: middle;
 	line-height: 30.4px; */
+}
+
+.guest img {
+	width: 560px;
+	height: 490.55px;
+	margin-top: 160px;
+}
+
+.customers {
+	width: 100%;
+	height: 3315px;
+}
+
+.customers p{
+	margin-top: 60px;
+	margin-bottom: 120px;
+	font-size: 28px;
+	color: #252932;
+	text-align: center;
+}
+
+.restaurant{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.restaurant a {
+	padding: 20px;
+  font-size: 16px;
+  color: #505563;
 }
 
 

@@ -11,7 +11,7 @@ header {
 	background-color: #fff;
 	width: 100%;
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.16);
 }
 
@@ -21,6 +21,10 @@ nav {
 	align-items: center;
 	padding: 20px 0;
 }
+
+/* main {
+	max-width: 1400px;
+} */
 
 footer {
 	background-color: #252932;
@@ -74,44 +78,130 @@ a.menuBtn {
   display: inline-block;
   height: 20px;
   width: 27px;
-  background: url(../inline/image/ot-logo-white.png);
+  background: url(image/ot-logo-white.png);
   background-size: 100%;
   margin-bottom: -4px;
   margin-right: 10px;
 }
 
 .menuBtn:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* main 樣式設定 */
 
 .pageWrap {
-	padding: 0;
-	margin: 0;
-	/* display: block; */
+	/* padding: 0;
+	margin: 0; */
+	display: flex;
+	flex-wrap: wrap;
 	border: none;
-	/* overflow: unset; */
-	/* vertical-align: baseline; */
+	max-width: 1440px;
+	margin: 0 auto;
+	/* height: 100vh; */
 }
 
-
-.section1LeftWrap{
+/* .section1LeftWrap{
 	float: left;
-}
+} */
 
-.bcgImg1 {
+/* .bcgImg1 {
 	background-image: url(./image/New-official-website首圖.png);
 	background-repeat: repeat;
 	background-size: cover;
-	/* display: block; */
 	overflow: hidden;
-	height: 320px;
+	width: 100%;
+} */
+
+.serveCountry {
+	width: 100%;
+	height: 600px;
+	background-image: url(./image/New-official-website_country.png) ;
+	background-position: center center;
+	background-size: cover;
+	margin-top: 80px;
+	margin-bottom: 80px;
+	position: relative;
 }
 
-.clear {
-	clear: both;
+.serveCountry p {
+	font-size: 17.333px;
+	color: #333;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	left: 28%;
 }
+
+.reservation {
+	width: 100%;
+	height: 1045px;
+	background-image: url(./image/New-official-website_hp_background1.png) ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-bottom: 40px;
+	z-index: 1;
+}
+
+p.tool {
+	color: #ec6300;
+	font-size: 26.6667px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+p.feature1 {
+	color: #252932;
+	font-size: 32px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+.booking {
+	display: flex;
+}
+
+.booking img {
+	justify-content: center;
+	width: 560px;
+	height: 490.55px;
+	z-index: 2;
+}
+
+.feature23 {
+	width: 100%;
+	height: 1800px;
+	background-image: url(./image/New-official-website_hp_background2.png) ;
+	/* background-repeat: no-repeat; */
+	background-size: cover;
+	margin-bottom: 40px;
+	z-index: 1;
+	
+}
+
+.queuingFeature ul {
+	margin-top: 80px;
+	margin-bottom: 60px;
+	color: #064c8c;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.queuing {
+	display: flex;
+	justify-content: space-around;
+}
+
+.queuing img {
+	width: 560px;
+	height: 490.55px;
+	margin-top: 240px;
+	/* text-align: right;
+	vertical-align: middle;
+	line-height: 30.4px; */
+}
+
 
 /* footer樣式設定 */
 .footerWrap {

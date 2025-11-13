@@ -41,23 +41,19 @@ iframe {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
 .navLogo {
 	width: 90px;
 	height: 34px;
 	margin-left: 20px;
 }
-
 .menu {
 	margin-right: 20px;
 }
-
 .menu a {
 	padding: 15px;
   font-size: 15px;
   color: #505563;
 }
-
 a.menuBtn {
   background-color: #da3743;
   border: none;
@@ -68,7 +64,6 @@ a.menuBtn {
   border-radius: 25px;
   line-height: 1.5;
 }
-
 .menuBtn::before {
   content: "";
   display: inline-block;
@@ -79,7 +74,6 @@ a.menuBtn {
   margin-bottom: -4px;
   margin-right: 10px;
 }
-
 .menuBtn:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -92,7 +86,6 @@ a.menuBtn {
 	max-width: 1440px;
 	margin: 0 auto;
 }
-
 .trial {
 	width: 1200px;
 	height: 635px;
@@ -103,35 +96,28 @@ a.menuBtn {
 	top: 85px;
 	right: -85px;
 }
-
 .trialWrap {
 	position: absolute;
 	top: 85px;
 	left: 15px;
 }
-
 .slogan {
 	font-size: 44px;
 	font-weight: 700;
 }
-
 .slogan1 {
 	color: #000000;
 }
-
 .slogan2 {
 	color: #ff6337;
 }
-
 .slogan3 {
 	font-size: 20px;
 	font-weight: 700;
 }
-
 .introduction {
 	margin-top: 60px;
 }
-
 .introduction p {
 	color: #595959;
 	font-size: 16px;
@@ -178,36 +164,61 @@ a.menuBtn {
 	width: 100%;
 	height: 1045px;
 	background-image: url(./image/New-official-website_hp_background1.png) ;
-	background-position: center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin-bottom: 40px;
-	z-index: 1;
 }
-
 .tool {
 	color: #ec6300;
 	font-size: 26.6667px;
 	margin-bottom: 40px;
 	text-align: center;
 }
-
 .feature1 {
 	color: #252932;
 	font-size: 32px;
 	margin-bottom: 70px;
 	text-align: center;
 }
-
-.booking {
-	display: flex;
+.booking,
+.queuingContent,
+.guestContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.booking img {
-	justify-content: center;
+.bookingImg {
 	width: 560px;
-	height: 490.55px;
-	z-index: 2;
+  aspect-ratio: auto;
+  margin-right: 26px;
+	margin-bottom: 400px;
+	order: 0;
+}
+
+.cardWrap {
+	width: 560px;
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card div {
+	flex-grow: 1;
+}
+
+.bookingFeature img {
+	width: 44px;
+	height: 44px;
+	flex-shrink: 0;
+	margin-top: 55px;
+	margin-right: 26px;
 }
 
 .feature23 {
@@ -215,62 +226,79 @@ a.menuBtn {
 	height: 1800px;
 	background-image: url(./image/New-official-website_hp_background2.png) ;
 	/* background-repeat: no-repeat; */
+	background-position: center center;
 	background-size: cover;
-	margin-bottom: 40px;
-	z-index: 1;
+	margin-bottom: 160px;
 }
 
-.queuing,
-.guest {
-	display: flex;
-	justify-content: space-around;
+.queuingFeature img {
+	width: 44px;
+	height: 44px;
+	flex-shrink: 0;
+	margin-top: 55px;
+	margin-right: 26px;
 }
 
-.bookingFeature ul,
-.queuingFeature ul,
-.guestFeature ul {
-	margin-top: 80px;
-	color: #064c8c;
+.bookingFeature h3,
+.queuingFeature h3,
+.guestFeature h3 {
 	font-size: 24px;
-	font-weight: 700;
+  color: #064c8c;
+  font-weight: 700;
+  margin-left: 84px;
 }
 
-.bookingFeature li,
-.queuingFeature li,
-.guestFeature li {
+.bookingFeature h4,
+.queuingFeature h4,
+.guestFeature h4 {
 	margin-top: 60px;
 	font-size: 19.2px;
+	font-weight: 700;
 	color: #252932;
 }
 
 .bookingFeature p,
 .queuingFeature p,
 .guestFeature p {
-	font-size: 16px;
-	font-weight: 400;
-	color: #252932;
+	line-height: 2;
+  font-size: 16px;
+  color: #252932;
+  text-align: justify;
 }
-
-.queuing img {
+.queuingImg {
 	width: 560px;
-	height: 490.55px;
+  aspect-ratio: auto;
+  margin-right: 26px;
 	margin-top: 240px;
-	/* text-align: right;
-	vertical-align: middle;
-	line-height: 30.4px; */
+	margin-bottom: 400px;
+	order: 2;
 }
 
-.guest img {
+.guestImg {
 	width: 560px;
-	height: 490.55px;
-	margin-top: 160px;
+	aspect-ratio: auto;
+  margin-right: 26px;
+	margin-bottom: 400px;
+	order: 0;
+	margin-top: -20px;
+}
+
+.guestFeature {
+	margin-top: -500px;
+}
+
+.guestFeature img {
+	width: 44px;
+	height: 44px;
+	flex-shrink: 0;
+	margin-top: 55px;
+	margin-right: 26px;
 }
 
 .customers {
 	width: 100%;
 	height: 3315px;
 }
-
 .customers p{
 	margin-top: 60px;
 	margin-bottom: 120px;
@@ -278,24 +306,89 @@ a.menuBtn {
 	color: #252932;
 	text-align: center;
 }
-
-.restaurant{
+.restaurantList{
 	margin: 0 auto;
 	text-align: center;
 }
-
-.restaurant a {
+.restaurantList a {
 	padding: 20px;
   font-size: 16px;
   color: #505563;
 }
+.restaurantList .tab {
+	display: inline-block;
+	padding: 14px 20px;
+	cursor: pointer; /* 滑鼠移動變手指圖形 */
+	color: #666666;
+	text-decoration: none;
+	border-bottom: 4px solid transparent;
+	transition: color 0.2s, border-bottom 0.2s;
+}
+
+.restaurantList .tab:hover {
+	color: #252932;
+	border-bottom: 4px solid #ff6e06;
+}
+.listBody {
+	position: relative;
+	font-size: 16px;
+	margin-top: 16px;
+}
+.listBody::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	height: 1px;
+	width: 100%;
+	background-color: #f0f2f7;
+}
+.listBody .brandPanel {
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px 32px;
+  margin-top: 40px;
+}
+.listBody .brand {
+  width: 180px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.listBody .brand img {
+  max-width: 170px;
+  max-height: 90px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  transition: 0.5s;
+}
+.listBody .brand:hover img {
+  transform: scale(1.12);
+}
+/* 預設顯示第一組（未 hover） */
+.listBody .brandPanel:first-child { display: flex; }
+
+/* tab hover 時顯示對應品牌區 (注意tab和brandPanel相鄰且順序完全一致) */
+.restaurantList .tab:nth-child(1):hover ~ .listBody .brandPanel:nth-child(1),
+.restaurantList .tab:nth-child(2):hover ~ .listBody .brandPanel:nth-child(2),
+.restaurantList .tab:nth-child(3):hover ~ .listBody .brandPanel:nth-child(3),
+.restaurantList .tab:nth-child(4):hover ~ .listBody .brandPanel:nth-child(4),
+.restaurantList .tab:nth-child(5):hover ~ .listBody .brandPanel:nth-child(5),
+.restaurantList .tab:nth-child(6):hover ~ .listBody .brandPanel:nth-child(6) {
+  display: flex;
+}
+.listBody .brandPanel:not(:first-child) { display: none; }
 
 .formWrap {
 	width: 100%;
-	height: 2432px;
+	height: 2322px;
 	background-image: url(./image/New-official-website_form_background.png) ;
 	/* background-repeat: no-repeat; */
 	background-size: cover;
+	background-position: center;
 	z-index: 1;
 }
 
@@ -321,7 +414,7 @@ a.menuBtn {
 	background-color: #fff;
 	border-radius: 20px;
 	width: 800px;
-	height: 1543px;
+	height: 1402px;
 	margin: 0 auto;
 }
 
@@ -357,6 +450,7 @@ br + a {
 
 .formSheet {
 	width: 480px;
+	max-height: 1072px;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -388,75 +482,188 @@ select:focus {
 	border-color: #999999;
 }
 
+.submitBtn {
+  width: 120px;
+  height: 40px;
+  margin: 103px auto 15px;
+  padding: 0;
+  background-color: #ec6337;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.formNotice {
+	font-size: 10.667px;
+}
+
+.contactTrial {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.readMore {
+  font-size: 32px;
+  font-weight: 700;
+  color: #252932;
+  text-align: center;
+}
+
+.readMore h3 {
+  margin-top: 80px;
+  margin-bottom: 30px;
+	font-size: 32px;
+}
+
+.readMoreBtn a {
+	width: 187.14px;
+	height: 61.14px;
+  display: inline-block;
+  background-color: #064c8c;
+  color: #fff;
+  border: 1px solid #064c8c;
+  border-radius: 10px;
+  padding: 20px 30px;
+  font-size: 20px;
+  font-weight: 700;
+	line-height: 1;
+  margin-bottom: 85px;
+}
+
+.telContact,
+.freeTry {
+  padding: 0 20px;
+  width: 30%;
+  position: relative;
+}
+
+.telContact h4 {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #333333;
+  font-size: 21.333px;
+}
+
+.contactTime {
+  font-size: 14px;
+  color: #252932;
+  margin: 30px 0;
+  font-weight: 400;
+  line-height: 2;
+}
+
+.telNumber {
+  font-weight: 700;
+  font-size: 24px;
+  color: #252932;
+}
+
+.telNumber:hover {
+  color: #ff9800;
+}
+
+.telContact::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: calc(100% - 40px);
+  top: 40px;
+  right: 0;
+  background-color: #cbd1dc;
+}
+
+.freeTry h4 {
+	margin-top: 40px;
+  font-weight: 700;
+  color: #252932;
+  font-size: 21.333px;
+}
+
+.freeTry p {
+	margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  color: #252932;
+  font-size: 14.667px;
+	line-height: 2;
+}
+
+.freeTryBtn a {
+	width: 125.14px;
+	height: 38.14px;
+  background-color: #ec6337;
+  border-color: #ec6337;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  padding: 12px 20px 12px 20px;
+}
+
 /* footer樣式設定 */
 .footerWrap {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
 .info {
 	display: flex;
 	font-size: 12.3px;
 	padding: 60px 0 20px 0;
 }
-
 .info > div {
 	width: 25%;
 	margin: 0 20px;
 }
-
 .about img {
 	width: 90px;
 }
-
+.about address {
+	font-style: normal;
+}
 .country {
 	margin-top: 25px;
 	margin-bottom: 14px;
 	font-size: 14px;
 	font-weight: 700;
 }
-
 .jpPostcode {
 	margin-bottom: 12.5px;
 }
-
 .info .sitemap {
 	margin-bottom: 40px;
 }
-
 .info .sitemap li,
 .contact li {
   border-bottom: 1px solid #384044;
 	padding: 10px 10px 10px 0;
 	font-size: 16px;
 }
-
 .sitemap h3,
 .contact h3,
 .socialMedia h3 {
 	font-size: 13px;
 	margin-bottom: 20px;
 }
-
 .language,
 .fb {
 	margin-top: 40px;
 }
-
 .contact p {
 	font-size: 16px;
 	margin-bottom: 16px;
 }
-
 .zhLang {
 	color: #000;
 }
-
 .copyright {
 	background: #191c23;
 	padding: 15px 0 13px;
 }
-
 .copyright .coprInfo {
 	display: flex;
 	justify-content: space-between;
@@ -464,17 +671,14 @@ select:focus {
 	padding: 0 120.286px;
 	color: #9ea6b7;
 }
-
 .coprInfo p {
 	line-height: 40px;
 	font-size: 15px;
 	text-align: center;
 }
-
 .coprInfo a {
 	color: #9ea6b7;
 }
-
 .mediaIcon a i {
 	width: 40px;
 	height: 40px;
